@@ -39,7 +39,7 @@ public class SalesService : ISalesService
 
     public List<TotalDailyRevenue> GetTotalDailyRevenue(){
         var salesListGroupedByArticles = salesList.GroupBy(salesList => salesList.Day);
-        int total = 0;
+        double total = 0;
         foreach(var group in salesListGroupedByArticles)    
         {
         Console.WriteLine("Revenue on " + group.Key + ":");    
@@ -68,7 +68,7 @@ public class SalesService : ISalesService
 
     public List<GroupedRevenue> GetGroupedRevenue(){
         var salesListGroupedByArticles = salesList.GroupBy(salesList => salesList.ArticleNumber);   
-        int total = 0;
+        double total = 0;
         foreach(var group in salesListGroupedByArticles)    
         {
         Console.WriteLine("Revenue from article " + group.Key + ":");    

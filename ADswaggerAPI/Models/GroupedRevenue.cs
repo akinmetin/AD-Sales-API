@@ -1,9 +1,9 @@
 public class GroupedRevenue{
     public string ArticleNumber { get; set; }
-    public int Revenue { get; set; }
+    public double Revenue { get; set; }
     
     // Default Construction
-    public GroupedRevenue(string _articlenumber, int _revenue)
+    public GroupedRevenue(string _articlenumber, double _revenue)
     {
          ArticleNumber = _articlenumber;
          Revenue = _revenue;
