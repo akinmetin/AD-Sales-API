@@ -48,7 +48,18 @@ Swashbuckle Swagger AspNet Core v.5.0.0-rc5
 | POST              | /api/Sales/Add/Sale         | Adds new sale into memory/database.                |
 
 
-## Sample API Calls
+## Example API Fields
+
+| Field Name | Description                                 | Data type |
+| ------------------ |:----------------------------------- |:--------- |
+| ``articleNumber``  | Alphanumeric article number         | string    |
+| ``salesPrice``     | Price of the article                | double    |
+| ``day``            | Short form of day name              | string    |
+| ``revenue``        | Income from article/s               | double    |
+| ``count``          | Count of article/s                  | integer   |
+
+
+## Example API Calls
 
 ### curl -X GET "http://localhost:5500/api/Sales/All" -H "accept: text/plain"
 Example output:
@@ -135,7 +146,15 @@ Example output:
 
 ## Versioning
 
-| Version       | Date            | Changes             |
-| ------------- |:---------------:| -------------------:|
-| v1.0.0        | 03/01/2020      | Initial development |
+| Version       | Date            | Changes                                  |
+| ------------- |:---------------:|:---------------------------------------- |
+| v1.0.0        | 03/01/2020      | Initial development                      |
+| v1.0.1        | 03/01/2020      | Added more comments and cleaned the code |
+
+
+## Sources
+
+[c# groupby](https://csharp.net-tutorials.com/linq/grouping-data-the-groupby-method/)
+[c# append tuple to list](https://stackoverflow.com/questions/42785492/adding-an-item-to-a-tuple-in-c-sharp)
+[c# add tuples into list](https://stackoverflow.com/questions/23779824/c-sharp-adding-to-list-of-tuples-with-a-function)
 

@@ -15,7 +15,7 @@ namespace ADswaggerAPI.Controllers
         {
             salesService = new SalesService();
         }
-        // GET api/GetAllClass
+        // Create api endpoints and connect them with the specific functions
         [HttpGet("All")]
         public ActionResult<List<Sales>> GetAllSales()
         {
@@ -27,18 +27,6 @@ namespace ADswaggerAPI.Controllers
         {
             return salesService.GetGroupedRevenue();
         }
-
-        // [HttpGet("GetSalesByID/{id}")]
-        // public Sales GetSalesByID(int id)
-        // {
-        //     return salesService.GetSalesByID(id);
-        // }
-
-        // [HttpGet("GetSalesByArticleNumber/{articlenumber}")]
-        // public Sales GetSalesByArticleNumber(string articlenumber)
-        // {
-        //     return salesService.GetSalesByArticleNumber(articlenumber);
-        // }
 
         [HttpGet("Daily")]
         public ActionResult<List<DailySales>> GetDailySalesCount()

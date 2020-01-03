@@ -2,8 +2,6 @@ using System.Collections.Generic;
 public interface ISalesService
 {
     List<Sales> GetAllSales();
-    // Sales GetSalesByID(int id);
-    // Sales GetSalesByArticleNumber(string ArticleNumber);
     
     void AddSale(Sales sales);
 

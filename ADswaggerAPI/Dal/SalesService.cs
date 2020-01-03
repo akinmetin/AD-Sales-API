@@ -12,31 +12,23 @@ public class SalesService : ISalesService
         new Sales(){ArticleNumber="1AVFX4", SalesPrice=8, Day="Mon"},
         new Sales(){ArticleNumber="5GBH631A", SalesPrice=14, Day="Tue"},
     };
-
     public static List<TotalDailyRevenue> totalDailyRevenueList = new List<TotalDailyRevenue>();
     public static List<DailySales> dailySalesList = new List<DailySales>();
     public static List<GroupedRevenue> groupedRevenueList = new List<GroupedRevenue>();
 
+    // Return pre-defined salesList
     public List<Sales> GetAllSales()
     {
         return salesList;
     }
 
-    // public Sales GetSalesByID(int id)
-    // {
-    //     return salesList.Find(result => result.ID == id);
-    // }
-
-    // public Sales GetSalesByArticleNumber(string articlenumber)
-    // {
-    //     return salesList.Find(result => result.ArticleNumber == articlenumber);
-    // }
-
+    // Add element into salesList
     public void AddSale(Sales sales)
     {
         salesList.Add(sales);
     }
 
+    // Sum up the total revenues and group them by day
     public List<TotalDailyRevenue> GetTotalDailyRevenue(){
         var salesListGroupedByArticles = salesList.GroupBy(salesList => salesList.Day);
         double total = 0;
@@ -53,6 +45,7 @@ public class SalesService : ISalesService
         return totalDailyRevenueList;
     }
 
+    // Group the articles by day and count
     public List<DailySales> GetDailySalesCount(){
         var salesListGroupedByArticles = salesList.GroupBy(salesList => salesList.Day);    
         foreach(var group in salesListGroupedByArticles)    
@@ -66,6 +59,7 @@ public class SalesService : ISalesService
         return dailySalesList;
     }
 
+    // Group the articles by article number and sum up the revenues
     public List<GroupedRevenue> GetGroupedRevenue(){
         var salesListGroupedByArticles = salesList.GroupBy(salesList => salesList.ArticleNumber);   
         double total = 0;
