@@ -39,13 +39,13 @@ Swashbuckle Swagger AspNet Core v.5.0.0-rc5
 
 ## Endpoints
 
-| Request Type      | Endpoint                    | What it does                                       |
-| ----------------- |:---------------------------:|:-------------------------------------------------- |
-| GET               | /api/Sales/All              | Returns list of sold article details.              |
-| GET               | /api/Sales/All/Revenue      | Returns list of revenues by article numbers.       |
-| GET               | /api/Sales/Daily            | Returns count of sold articles by day.             |
-| GET               | /api/Sales/Daily/Revenue    | Returns list of article revenues by day.           |
-| POST              | /api/Sales/Add/Sale         | Adds new sale into memory/database.                |
+| Request Type          | Endpoint                    | What it does                                       |
+| -----------------     |:--------------------------- |:-------------------------------------------------- |
+| ``GET``               | /api/Sales/All              | Returns list of sold article details.              |
+| ``GET``               | /api/Sales/All/Revenue      | Returns list of revenues by article numbers.       |
+| ``GET``               | /api/Sales/Daily            | Returns count of sold articles by day.             |
+| ``GET``               | /api/Sales/Daily/Revenue    | Returns list of article revenues by day.           |
+| ``POST``              | /api/Sales/Add/Sale         | Adds new sale into memory/database.                |
 
 
 ## Example API Fields
