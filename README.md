@@ -154,7 +154,7 @@ Example output:
 
 ## Sources
 
-[c# groupby](https://csharp.net-tutorials.com/linq/grouping-data-the-groupby-method/)
-[c# append tuple to list](https://stackoverflow.com/questions/42785492/adding-an-item-to-a-tuple-in-c-sharp)
-[c# add tuples into list](https://stackoverflow.com/questions/23779824/c-sharp-adding-to-list-of-tuples-with-a-function)
+* [c# groupby](https://csharp.net-tutorials.com/linq/grouping-data-the-groupby-method/)
+* [c# append tuple to list](https://stackoverflow.com/questions/42785492/adding-an-item-to-a-tuple-in-c-sharp)
+* [c# add tuples into list](https://stackoverflow.com/questions/23779824/c-sharp-adding-to-list-of-tuples-with-a-function)
 
