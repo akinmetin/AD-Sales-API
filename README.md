@@ -141,7 +141,7 @@ Example output:
 ]
 ```
 
-### curl -X POST "http://localhost:5500//api/Sales/Add/Sale" -H "accept: text/plain"
+### curl -X POST "http://localhost:5500/api/Sales/Add/Sale" -H "accept: text/plain"
 
 
 ## Versioning
