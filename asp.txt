@@ -1,0 +1,8 @@
+useful resources:
+
+http://www.borakasmer.com/net-core-uzerinde-swagger/
+https://github.com/borakasmer/SwaggerOnNetCore
+https://www.geeksforgeeks.org/c-sharp-count-the-total-number-of-elements-in-the-list/
+https://csharp.net-tutorials.com/linq/grouping-data-the-groupby-method/
+
+convert SalesPrice to double from int
